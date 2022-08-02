@@ -2,7 +2,7 @@ const CreateError = require('http-errors')
 const config = require('../../config')
 const Request = require('./base')
 
-const Users = new Request({
+const Example = new Request({
   baseURL: config.baseURL.example,
   timeout: 1000 * 5,
   responseInterceptor: (response) => {
@@ -17,5 +17,5 @@ const Users = new Request({
 })
 
 module.exports = {
-  Users,
+  Example,
 }
